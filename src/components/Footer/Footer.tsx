@@ -21,6 +21,21 @@ export function Footer()  {
             <Link key={index} href={link.path}>{link.name}</Link>
           )}
         </nav>
+        <nav>
+          <h5>ÁREA DO CLIENTE</h5>
+          <Link href="/cadastro">Cadastro</Link>
+          <Link href="/assinatura">Assinatura</Link>
+          <Link href="/agendamentos">Agendamentos</Link>
+          <Link href="/chatbot">Chatbot PAI</Link>
+          <Link href="/centro-de-parceiros">Centro de Parceiros</Link>
+          <Link href="/notificações">Notificações</Link>
+        </nav>
+        <nav>
+          <h5>REDES SOCIAIS</h5>
+          <Link href="/">Facebook</Link>
+          <Link href="/">Instagram</Link>
+          <Link href="/">GitHub</Link>
+        </nav>
       </div>
     </footer>
   );
