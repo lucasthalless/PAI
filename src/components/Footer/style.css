@@ -21,10 +21,16 @@ footer div nav {
   flex-direction: column;
 }
 
+footer div:nth-last-child(1) {
+  display: flex;
+  gap: 100px;
+}
+
 footer h5 {
   font-weight: 700;
   margin-bottom: 22.5px;
   font-size: 15px;
+  text-transform: uppercase;
 }
 
 footer a:hover {
