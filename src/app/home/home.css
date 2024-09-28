@@ -1,10 +1,11 @@
-.banner-section {
+.home-banner-section {
   display: flex;
   align-items: center;
   gap: 23px;
+  margin-bottom: 180px;
 }
 
-.banner-section .banner-text {
+.home-banner-section .banner-text {
   max-width: 660px;
   padding-left: 13px;
   display: flex;
@@ -13,19 +14,19 @@
   gap: 10px;
 }
 
-.banner-section .banner-text h1 span {
+.home-banner-section .banner-text h1 span {
   font-weight: 600;
   font-size: 90px;
   line-height: 94.5px;
 }
 
-.banner-section .banner-text h1 {
+.home-banner-section .banner-text h1 {
   font-weight: 600;
   font-size: 48px;
   line-height: 50.4px;
 }
 
-.banner-section .banner-text a {
+.home-banner-section .banner-text a {
   border-radius: 8px;
   padding: 0.6em 1.2em;
   font-family: inherit;
@@ -54,35 +55,35 @@
   transition: .3s;
 }
 
-.banner-section .banner-text p {
+.home-banner-section .banner-text p {
   font-weight: 300;
   font-size: 15px;
   line-height: 22.5px;
   max-width: 465px;
 }
 
-.banner-section .banner-imgs {
+.home-banner-section .banner-imgs {
   position: relative;
   width: 632px;
   height: 632px;
 }
 
-.banner-section .banner-imgs img {
+.home-banner-section .banner-imgs img {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
 @media (max-width: 1300px) {
-  .banner-section .banner-imgs {
+  .home-banner-section .banner-imgs {
     display: none;
   }
 
-  .banner-section .banner-text {
+  .home-banner-section .banner-text {
     align-items: center;
   }
 
-  .banner-section .banner-text h1 {
+  .home-banner-section .banner-text h1 {
     text-align: center;
   }
 }

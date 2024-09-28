@@ -5,7 +5,6 @@ footer {
   display: flex;
   justify-content: space-between;
   line-height: 22.5px;
-  margin-top: 180px;
 }
 
 footer div:nth-child(1) {
