@@ -16,23 +16,26 @@ export default function ConhecaOPAI() {
         <div className="founders-div">
           <FounderCard
             name="Carolina Rodgerio"
-            rm="554975"
+            role="Gerente de projetos"
             github="carolrodgerio"
-            imageUrl="https://avatars.githubusercontent.com/u/161485752?v=4"
+            linkedin="carol-rodgerio"
+            imageUrl="carolina.png"
           />
 
           <FounderCard
             name="Enrico D’Amico"
-            rm="557706"
+            role="Desenvolvedor Back-end"
             github="Enrico-AD"
-            imageUrl="https://avatars.githubusercontent.com/u/74722460?v=4"
+            linkedin="enricoandradedamico"
+            imageUrl="enrico.png"
           />
 
           <FounderCard
             name="Lucas Santos"
-            rm="558886"
+            role="Full-stack & IA"
             github="lucasthalless"
-            imageUrl="https://avatars.githubusercontent.com/u/67612669?v=4"
+            linkedin="lucastds"
+            imageUrl="lucas.png"
           />
         </div>
       </section>

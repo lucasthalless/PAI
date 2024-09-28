@@ -1,35 +1,44 @@
+import Image from 'next/image';
 import './style.css';
 
 interface FounderCardProps {
   name: string;
-  rm: string;
+  role: string;
   github: string;
+  linkedin: string;
   imageUrl: string;
 }
 
 export default function FounderCard({
   name,
-  rm,
+  role,
   github,
+  linkedin,
   imageUrl,
 }: FounderCardProps) {
   return (
     <div className="founder-card">
-      <img src={imageUrl} alt={`${name} profile`} />
+      <Image src={`/${imageUrl}`} alt={`${name} profile`} width={260} height={260} />
       <h4>{name}</h4>
       <p>
-        <strong>RM:</strong> {rm}
+        {role}
       </p>
-      <p>
-        <strong>GitHub: </strong>
+      <div className='founder-socials'>
         <a
           href={`https://github.com/${github}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {github}
+          <Image src="github.svg" alt='Github.' width={44} height={44} />
         </a>
-      </p>
+        <a
+          href={`https://www.linkedin.com/in/${linkedin}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src="linkedin.svg" alt='Github.' width={44} height={44} />
+        </a>
+      </div>
     </div>
   );
 }
