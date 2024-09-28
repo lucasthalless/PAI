@@ -1,0 +1,38 @@
+.founder-card {
+  background-color: #EDEEFF;
+  border-radius: 20px;
+  padding: 54px;
+  text-align: center;
+  max-width: 389px;
+  max-height: 513px;
+  width: fit-content;
+  color: var(--black);
+}
+
+.founder-card img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 26px;
+  max-width: 282px;
+  max-height: 280px;
+}
+
+.founder-card h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 5px;
+}
+
+.founder-card p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.founder-card a {
+  color: var(--black);
+  font-weight: 300;
+  border-radius: 8px;
+  text-decoration: underline;
+}
