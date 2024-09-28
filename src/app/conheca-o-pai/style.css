@@ -1,0 +1,27 @@
+.founders-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-bottom: 195px;
+}
+
+.founders-section h2{
+  background-image: var(--pai-gradient);
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  font-size: 64px;
+  line-height: 67.2px;
+  font-weight: 600;
+}
+
+.separator {
+  border: 1px solid var(--gray);
+  width: 100%;
+}
+
+.founders-section .founders-div {
+  display: flex;
+  gap: 65px;
+  justify-content: center;
+}
