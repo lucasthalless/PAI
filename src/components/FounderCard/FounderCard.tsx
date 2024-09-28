@@ -1,3 +1,5 @@
+import './style.css';
+
 interface FounderCardProps {
   name: string;
   rm: string;
