@@ -1,13 +1,13 @@
-import { Poppins } from '@next/font/google';
-import { Footer } from '@src/components/Footer/Footer';
-import Header from '@src/components/Header/Header';
+import { Poppins } from "next/font/google";
+import { Footer } from "@src/components/Footer/Footer";
+import Header from "@src/components/Header/Header";
 import type { Metadata } from "next";
 import "./globals.css";
 
 const poppins = Poppins({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-  variable: '--poppins',
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--poppins",
 });
 
 export const metadata: Metadata = {
@@ -22,14 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${poppins.className} antialiased`}
-      >
+      <body className={`${poppins.className} antialiased`}>
         <Header />
         {children}
         <Footer />
       </body>
     </html>
   );
-
 }
