@@ -1,5 +1,6 @@
 import Banner from "@src/components/Banner/Banner";
 import FounderCard from '../../components/FounderCard/FounderCard';
+import './style.css';
 
 export default function ConhecaOPAI() {
   return (
