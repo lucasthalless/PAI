@@ -1,4 +1,5 @@
 import Banner from "@src/components/Banner/Banner";
+import { TalkToUsForm } from "@src/components/TalkToUsForm/TalkToUsForm";
 import FounderCard from '../../components/FounderCard/FounderCard';
 import './style.css';
 
@@ -38,6 +39,10 @@ export default function ConhecaOPAI() {
             imageUrl="lucas.png"
           />
         </div>
+      </section>
+      <section className="talk-to-us-section">
+        <h3>Fale conosco!</h3>
+        <TalkToUsForm />
       </section>
     </main>
   );

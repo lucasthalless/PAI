@@ -25,3 +25,40 @@
   gap: 65px;
   justify-content: center;
 }
+
+.talk-to-us-section {
+  background-image: url('/gradient-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding: 180px 130px;
+  color: white;
+}
+
+.talk-to-us-section h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50.4px;
+}
+
+.talk-to-us-section form {
+  margin-top: 90px;
+  max-width: 592px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.talk-to-us-section form button {
+  width: fit-content;
+  padding-inline: 52px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
+  color: var(--blue);
+  margin-top: 20px;
+}
+
+.talk-to-us-section form button:hover {
+  background-color: #ffffffcf;
+}
