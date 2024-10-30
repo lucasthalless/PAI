@@ -1,0 +1,26 @@
+.link-card {
+  display: block;
+  position: relative;
+  width: fit-content;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.link-card .link-card-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.link-card .link-card-text img {
+  margin: 0 auto;
+}
+
+.link-card .link-card-text h4 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  width: 240px;
+}

@@ -1,0 +1,92 @@
+.customer-dashboard {
+  background-color: #121212;
+  color: white;
+  display: flex;
+  padding: 0;
+  height: 100vh;
+}
+
+.customer-dashboard-aside {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  align-items: center;
+  border-right: 1px solid #000;
+  padding-top: 100px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.customer-dashboard-aside span {
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.customer-dashboard-aside:hover span {
+  background-color: var(--green);
+}
+
+.customer-dashboard nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid var(--dark-gray-2);
+  padding: 0 28px 20px;
+  width: 100%;
+}
+
+.customer-dashboard nav a {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+}
+
+.customer-dashboard nav a:hover {
+  color: var(--green);
+}
+
+.customer-dashboard nav a:hover svg path {
+  fill: var(--green) !important;
+}
+
+.customer-dashboard aside img {
+  margin-top: 125px;
+}
+
+.dashboard-content-section {
+  padding: 130px 60px 108px 80px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.dashboard-content-section h1 {
+  font-size: 34.66px;
+  font-weight: 400;
+  line-height: 51.99px;
+}
+
+.dashboard-content-section .separator {
+  height: 1px;
+  width: 100%;
+  background-color: var(--dark-gray-2);
+  margin: 50px 0;
+  border: none;
+}
+
+.links-cards {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
