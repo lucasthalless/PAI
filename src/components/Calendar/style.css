@@ -1,0 +1,58 @@
+.calendar {
+  width: fit-content;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10px;
+}
+
+.weekDay {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: #888;
+}
+
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day,
+.highlightDay,
+.emptyDay {
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+}
+
+.day {
+  background-color: transparent;
+}
+
+.emptyDay {
+  background-color: transparent;
+}
+
+.highlightDay {
+  background-color: #3b82f6;
+  color: white;
+}
