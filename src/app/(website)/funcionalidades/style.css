@@ -1,0 +1,113 @@
+.subscriber-section {
+  display: flex;
+  padding: 104px 0;
+  padding-left: 130px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscriber-section .subscriber-section-text {
+  width: 722px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscriber-section .subscriber-section-text h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50.4px;
+}
+
+.subscriber-section .subscriber-section-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.subscriber-section .subscriber-section-text ul {
+  list-style: disc;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.subscriber-section .subscriber-section-text i {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.reasons-to-love-section {
+  padding-bottom: 130px;
+}
+
+.reasons-to-love-section h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50.4px;
+  margin-bottom: 100px;
+}
+
+.reasons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.reasons-wrapper div {
+  height: 300px;
+  display: flex;
+  gap: 62px;
+  align-items: center;
+}
+
+.reasons-wrapper div:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.reasons-wrapper div img {
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 300px;
+}
+
+.reasons-wrapper p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.reasons-wrapper strong {
+  font-size: 1.75rem;
+}
+
+.subscribe-section {
+  background-image: url("/gradient-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding: 180px 130px;
+  color: white;
+}
+
+.subscribe-section h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50.4px;
+  margin-bottom: 100px;
+}
+
+.subscribe-section a {
+  width: fit-content;
+  padding-inline: 52px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
+  color: var(--blue);
+  margin-top: 20px;
+  padding-inline: 36px;
+}
+
+.subscribe-section a:hover {
+  background-color: #ffffffcf;
+}
