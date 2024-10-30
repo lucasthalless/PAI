@@ -1,0 +1,80 @@
+.plan-card {
+  background-color: #EDEEFF;
+  color: #141414;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  padding: 55px 77px;
+  width: fit-content;
+  position: relative;
+}
+
+.plan-card .favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background: var(--blue);
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.plan-card h4 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.plan-card .plan-card-heading p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.plan-card .plan-card-heading span {
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #4D4D4D;
+}
+
+.plan-card .plan-card-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 250px;
+}
+
+.plan-card .plan-card-benefits p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.plan-card .plan-card-benefits svg {
+  flex-shrink: 0;
+}
+
+.plan-card button {
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 19.5px;
+}
+
+.plan-card:hover {
+  background-color: #141414;
+  color: #ffffff;
+  scale: 1.05;
+}
+
+.plan-card:hover span {
+  color: var(--dark-gray);
+}

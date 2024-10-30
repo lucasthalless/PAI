@@ -1,0 +1,29 @@
+.plans-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-bottom: 104px;
+  padding-top: 142px;
+}
+
+.plans-section .plans-div {
+  justify-content: center;
+  display: flex;
+  gap: 60px;
+}
+
+.plans-section h2, .faq-section h2 {
+  background-image: var(--pai-gradient);
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-bottom: 158px;
+}
