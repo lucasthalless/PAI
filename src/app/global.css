@@ -3,21 +3,23 @@
 @tailwind utilities;
 
 * {
-  transition: .2s;
+  transition: 0.2s;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #141414;
 
-  --pai-gradient: linear-gradient(90deg, #0055C3 0%, #00E0FF 50%, #00FF85 100%);
-  --green: #00FF85;
+  --pai-gradient: linear-gradient(90deg, #0055c3 0%, #00e0ff 50%, #00ff85 100%);
+  --green: #00ff85;
   --bright-green: #77f8cd;
-  --blue: #0055C3;
-  --neon-blue: #00E0FF;
+  --blue: #0055c3;
+  --neon-blue: #00e0ff;
+  --purple: #dfd0ff;
   --black: #141414;
-  --gray: #EDEEFF;
-  --dark-gray: #A1A1A1;
+  --gray: #edeeff;
+  --dark-gray: #a1a1a1;
+  --dark-gray-2: #747474;
 }
 
 html {
@@ -48,7 +50,7 @@ body {
 
 main {
   color: var(--black);
-  background-color: #FFF;
+  background-color: #fff;
   padding-top: 140px;
 }
 
@@ -57,7 +59,12 @@ section {
   justify-content: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -65,7 +72,8 @@ p {
   margin: 0;
 }
 
-button {
+button,
+.link-button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -79,12 +87,13 @@ button {
   display: flex;
   align-items: center;
   gap: 7px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-button:hover {
+button:hover,
+.link-button:hover {
   background-color: #77f8cd;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 button:focus,
@@ -122,4 +131,13 @@ input::placeholder {
   left: 0;
   position: absolute;
   overflow: hidden;
+}
+
+.separator {
+  border: 1px solid var(--gray);
+  width: 100%;
+}
+
+strong {
+  font-weight: 700;
 }
