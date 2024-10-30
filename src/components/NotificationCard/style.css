@@ -1,0 +1,76 @@
+.notification-card {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.icon-container {
+  background-color: var(--blue);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin-left: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  color: var(--neon-blue);
+  font-family: var(--poppins);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.8px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.topic {
+  font-family: var(--poppins);
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+
+.message {
+  margin-top: 5px;
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.time {
+  display: block;
+  font-size: 12px;
+  color: var(--neon-blue);
+  margin-top: 8px;
+}
+
+.action-container {
+  margin-left: 10px;
+  cursor: pointer;
+  align-self: start;
+}
+
+.action-container:hover {
+  color: #f87171;
+}
