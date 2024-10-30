@@ -1,0 +1,121 @@
+.login-page {
+  display: flex;
+  padding: 200px 115px;
+  justify-content: space-between;
+  background: var(--black);
+  color: #fff;
+  height: 100vh;
+  align-items: center;
+}
+
+.login-page .login-text {
+  display: flex;
+  flex-direction: column;
+  gap: 77px;
+}
+
+.login-page .login-text img {
+  width: 112px;
+  aspect-ratio: 1;
+}
+
+.login-page .login-text div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-page .login-text div h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50.4px;
+}
+
+.login-page .login-text div p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.login-page .login-text div p a {
+  font-weight: 800;
+  color: var(--green);
+}
+
+.login-page .login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login-page .login-form form .input:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.login-page .login-form form a {
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  justify-content: end;
+}
+
+.login-page .login-form form .link-button {
+  height: 60px;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  background-color: var(--blue);
+  font-size: 19px;
+  line-height: 77px;
+  font-weight: 700;
+  box-shadow: 0px 12px 21px 4px rgba(0, 85, 195, 0.2);
+  margin-top: 25px;
+}
+
+.login-page .login-form form .link-button:hover {
+  box-shadow: 0px 0px 21px 14px rgba(0, 85, 195, 0.2);
+}
+
+.login-page .login-form .socials-login {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.alternative-login-separator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 77px;
+}
+
+.alternative-login-separator::before {
+  content: "";
+  border: 0.5px solid white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.alternative-login-separator p {
+  width: fit-content;
+  background-color: var(--black);
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 1;
+  padding: 0 15px;
+}
+
+.apple-card {
+  background-color: #fff;
+  width: 116px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}

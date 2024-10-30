@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import { homeLinks } from "@src/utils/homeLinks";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import './style.css';
+import "./style.css";
 
 export default function Header() {
   const router = useRouter();
@@ -17,11 +17,15 @@ export default function Header() {
         </Link>
       </div>
       <nav className="header-nav">
-        {homeLinks.map((link, index) =>{
-          return <Link className={`header-nav-link`} key={index} href={link.path}>{link.name}</Link>
+        {homeLinks.map((link, index) => {
+          return (
+            <Link className={`header-nav-link`} key={index} href={link.path}>
+              {link.name}
+            </Link>
+          );
         })}
       </nav>
-      <button onClick={() => router.push('/area-do-cliente')}>Área do cliente</button>
+      <button onClick={() => router.push("/login")}>Área do cliente</button>
     </header>
   );
 }
