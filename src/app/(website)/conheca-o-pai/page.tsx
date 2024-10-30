@@ -1,15 +1,15 @@
 import Banner from "@src/components/Banner/Banner";
 import { TalkToUsForm } from "@src/components/TalkToUsForm/TalkToUsForm";
 import Image from "next/image";
-import FounderCard from '../../components/FounderCard/FounderCard';
+import FounderCard from '../../../components/FounderCard/FounderCard';
 import './style.css';
 
 export default function ConhecaOPAI() {
   return (
-    <main>
+    <>
       <Banner
         bgImg="conheca-o-pai-banner.jpg"
-        title="Quando em apuros, é ele que você chama!"
+        title={<>Quando em apuros,<br />é <strong>ele</strong> que você chama!</>}
         subtitle="Se seu carro precisa de ajuda, conte com o PAI."
       />
       <section className="get-to-know">
@@ -65,6 +65,6 @@ export default function ConhecaOPAI() {
         <h3>Fale conosco!</h3>
         <TalkToUsForm />
       </section>
-    </main>
+    </>
   );
 }

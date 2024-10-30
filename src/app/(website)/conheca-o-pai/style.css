@@ -2,9 +2,8 @@
   display: flex;
   padding: 104px 0;
   padding-left: 130px;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
-  gap: 115px;
 }
 
 .get-to-know .get-to-know-text {
@@ -31,9 +30,10 @@
   flex-direction: column;
   gap: 60px;
   padding-bottom: 195px;
+  padding-inline: 130px;
 }
 
-.founders-section h2{
+.founders-section h2 {
   background-image: var(--pai-gradient);
   background-clip: text;
   color: transparent;
@@ -43,7 +43,7 @@
   font-weight: 600;
 }
 
-.separator {
+.founders-section .separator {
   border: 1px solid var(--gray);
   width: 100%;
 }
@@ -55,7 +55,7 @@
 }
 
 .talk-to-us-section {
-  background-image: url('/gradient-bg.jpg');
+  background-image: url("/gradient-bg.jpg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
