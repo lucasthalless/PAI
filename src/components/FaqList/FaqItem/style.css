@@ -30,7 +30,7 @@
   height: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .faq-answer div {
@@ -39,10 +39,11 @@
 
 .faq-answer ul {
   list-style: disc;
+  margin-left: 24px;
 }
 
 .faq-open-answer {
   max-height: 600px;
   overflow: scroll;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
