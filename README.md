@@ -1,5 +1,8 @@
-# PAI
-> Porto Artificial Intelligence
+# PAI — *Porto Artificial Intelligence*
+
+## Ambiente de produção
+
+O projeto possui um deploy bem sucedido na Vercel, disponível [aqui.](https://pai-60wl1nttz-lucasthalless-projects.vercel.app/)
 
 ## Ambiente de desenvolvimento
 
