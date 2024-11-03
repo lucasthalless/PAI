@@ -1,5 +1,3 @@
-
-
 .chatbot {
   width: 100%;
   height: 496px;
@@ -24,7 +22,7 @@
 }
 
 .chatbot .chatbot-header p {
-  color: var(--green);
+  color: red;
   font-size: 17px;
   font-weight: 500;
   line-height: 23.19px;
@@ -43,16 +41,12 @@
   gap: 18px;
 }
 
-.chatbot-header .chatbot-actions img {
-  cursor: pointer;
-}
-
 .status-icon {
   width: 8px;
   height: 8px;
   position: relative;
   border-radius: 50%;
-  background-color: var(--green);
+  background-color: red;
 }
 
 .chatbot .separator {
@@ -72,7 +66,6 @@
   margin: 0 20px;
   width: -webkit-fill-available;
   height: 56px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
@@ -95,8 +88,4 @@
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-.chatbot-input-actions img {
-  cursor: pointer;
 }
