@@ -41,16 +41,7 @@ export default function RootLayout({
           </Link>
           <Link href="/area-do-cliente/notificacoes">
             <Mail />
-            Notificações{" "}
-            <span
-              onClick={(e) => {
-                console.log(e);
-
-                e.currentTarget.style.display = "none";
-              }}
-            >
-              1
-            </span>
+            Notificações
           </Link>
         </nav>
         <Link href="/home">
