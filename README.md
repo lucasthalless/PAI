@@ -10,11 +10,11 @@ Para rodar o projeto no ambiente de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
@@ -22,9 +22,10 @@ E ele estará disponível na porta [http://localhost:3000](http://localhost:3000
 
 ## Repositório GitHub
 
-link: [https://github.com/lucasthalless/PAI/](https://github.com/lucasthalless/PAI/)
+link: <https://github.com/lucasthalless/PAI/>
 
 usuário adicionado como colaborador: vinimarcili
+link do invite: <https://github.com/lucasthalless/PAI/invitations>
 
 <!-- TODO -->
 link para o video apresentando o layout:
