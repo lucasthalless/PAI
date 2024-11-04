@@ -26,19 +26,19 @@ export default function AppointmentCard({
 
   return (
     <div
-      className={`appointmentCard ${isExpanded ? "expanded" : "compressed"}`}
+      className={`appointment-card ${isExpanded ? "expanded" : "compressed"}`}
       onClick={toggleExpand}
     >
-      <div className="appointmentHeader">
+      <div className="appointment-header">
         <span>
           {format(appointmentDate, "dd/MM/yyyy", { locale: ptBR })}: Atendimento
           agendado
         </span>
-        <button className="expandButton">{isExpanded ? "-" : "+"}</button>
+        <button className="expand-button">{isExpanded ? "-" : "+"}</button>
       </div>
 
       {isExpanded && (
-        <div className="appointmentDetails">
+        <div className="appointment-details">
           <p>
             <strong>Local:</strong> {location}
           </p>

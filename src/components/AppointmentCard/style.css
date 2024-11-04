@@ -1,4 +1,4 @@
-.appointmentCard {
+.appointment-card {
   color: white;
   margin-bottom: 16px;
   cursor: pointer;
@@ -10,16 +10,16 @@
   width: 500px;
 }
 
-.appointmentCard.compressed {
+.appointment-card.compressed {
   max-height: 84px;
 }
 
-.appointmentCard.expanded {
+.appointment-card.expanded {
   max-height: 200px;
   height: fit-content;
 }
 
-.appointmentHeader {
+.appointment-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@
   position: relative;
 }
 
-.expandButton {
+.expand-button {
   background: none;
   color: white;
   font-size: 24px;
@@ -44,7 +44,7 @@
   justify-content: center;
 }
 
-.appointmentDetails {
+.appointment-details {
   font-size: 14px;
   color: var(--black);
   background-color: var(--gray);
