@@ -25,6 +25,7 @@ E ele estará disponível na porta [http://localhost:3000](http://localhost:3000
 link: <https://github.com/lucasthalless/PAI/>
 
 usuário adicionado como colaborador: vinimarcili
+
 link do invite: <https://github.com/lucasthalless/PAI/invitations>
 
 <!-- TODO -->
