@@ -4,8 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: -webkit-fill-available;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-inline: 100px;
   display: flex;
   position: fixed;
   top: 2rem;
@@ -19,7 +18,7 @@ header .header-logo {
   line-height: 0;
 }
 
-header .header-nav {
+.header-nav {
   display: flex;
   gap: 30px;
 }
@@ -39,6 +38,7 @@ header .header-nav-link:hover::after {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 
 header .header-nav .active::after {
@@ -57,4 +57,98 @@ header button {
   font-weight: 600;
   font-size: 17.31px;
   line-height: 25.96px;
+}
+
+.customer-area-button-mobile {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #111;
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-button {
+  background: #fff;
+  color: #111;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu:hover {
+  background: none;
+  box-shadow: inset 0px 0px 18px 18px var(--dark-gray-2);
+}
+
+.burger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media (max-width: 997px) {
+  .header-nav {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--black);
+    padding: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    max-height: 0;
+    padding-inline: 1rem;
+    overflow: hidden;
+  }
+
+  header .header-nav-link:hover::after {
+    bottom: -10px;
+    width: 15%;
+    left: 1rem;
+    left: 0;
+    transform: unset;
+  }
+
+  .header-nav.open {
+    max-height: 350px;
+    padding: 1rem;
+    padding-top: 40px;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .customer-area-button-mobile {
+    display: flex;
+  }
+
+  .customer-area-button {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    margin-inline: 20px;
+  }
 }
