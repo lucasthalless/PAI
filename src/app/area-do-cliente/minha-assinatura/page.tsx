@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <h1>Minha assinatura</h1>
       <div className="separator"></div>
-      <div className="plano-form-container">
+      <div className="plan-form-container">
         <form>
           <div className="form-row">
             <label htmlFor="plan" className="form-label">

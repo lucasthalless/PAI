@@ -1,4 +1,4 @@
-.plano-form-container {
+.plan-form-container {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -9,13 +9,13 @@
   border-radius: 8px;
 }
 
-.plano-form-container form {
+.plan-form-container form {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.form-row {
+.plan-form-container .form-row {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -24,36 +24,36 @@
   align-items: center;
 }
 
-.form-row label {
+.plan-form-container .form-row label {
   text-align: end;
   width: 98px;
 }
 
-.form-row input {
+.plan-form-container .form-row input {
   width: 160px;
   color: #ffffff;
 }
 
-.form-row input::placeholder {
+.plan-form-container .form-row input::placeholder {
   opacity: 50%;
 }
 
-.form-label {
+.plan-form-container .form-label {
   font-weight: bold;
   color: #ffffff;
 }
 
-.payment-method {
+.plan-form-container .payment-method {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.payment-text {
+.plan-form-container .payment-text {
   color: #b3b3b3;
 }
 
-.button-group {
+.plan-form-container .button-group {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -61,11 +61,11 @@
   align-items: end;
 }
 
-.button-group button {
+.plan-form-container .button-group button {
   width: fit-content;
 }
 
-.button-alterar-plano {
+.plan-form-container .button-alterar-plano {
   padding: 12px 24px;
   background-color: var(--neon-blue);
   color: var(--black);
@@ -77,7 +77,7 @@
   transition: background-color 0.3s ease;
 }
 
-.button-alterar-plano:hover {
+.plan-form-container .plan-form-container .button-alterar-plano:hover {
   background-color: #24b8e3;
 }
 
@@ -93,11 +93,11 @@
   transition: background-color 0.3s ease;
 }
 
-.button-alterar-pagamento:hover {
+.plan-form-container .button-alterar-pagamento:hover {
   background-color: #2bcf76;
 }
 
-.button-solicitar-cancelamento {
+.plan-form-container .button-solicitar-cancelamento {
   padding: 12px 24px;
   background-color: var(--blue);
   color: #ffffff;
@@ -109,6 +109,6 @@
   transition: background-color 0.3s ease;
 }
 
-.button-solicitar-cancelamento:hover {
+.plan-form-container .button-solicitar-cancelamento:hover {
   background-color: #2e7ce1;
 }
