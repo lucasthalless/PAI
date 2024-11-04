@@ -83,7 +83,6 @@ button,
   background-color: var(--green);
   color: var(--black);
   cursor: pointer;
-  transition: border-color 0.25s;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -140,4 +139,10 @@ input::placeholder {
 
 strong {
   font-weight: 700;
+}
+
+@media (max-width: 997px) {
+  section {
+    padding-inline: 30px;
+  }
 }

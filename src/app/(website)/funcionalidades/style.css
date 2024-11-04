@@ -99,7 +99,6 @@
 
 .subscribe-section a {
   width: fit-content;
-  padding-inline: 52px;
   font-size: 20px;
   font-weight: 600;
   background-color: white;
@@ -110,4 +109,31 @@
 
 .subscribe-section a:hover {
   background-color: #ffffffcf;
+}
+
+@media (max-width: 997px) {
+  .subscriber-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .subscriber-section .subscriber-section-text h2 {
+    font-size: 36px;
+  }
+
+  .subscriber-section .subscriber-section-img {
+    display: none;
+  }
+
+  .subscribe-section {
+    padding: 180px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reasons-wrapper div {
+    height: fit-content;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
 }

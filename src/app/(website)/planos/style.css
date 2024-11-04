@@ -10,9 +10,11 @@
   justify-content: center;
   display: flex;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
-.plans-section h2, .faq-section h2 {
+.plans-section h2,
+.faq-section h2 {
   background-image: var(--pai-gradient);
   background-clip: text;
   color: transparent;
@@ -26,4 +28,11 @@
   flex-direction: column;
   gap: 60px;
   padding-bottom: 158px;
+}
+
+@media (max-width: 997px) {
+  .plans-section h2,
+  .faq-section h2 {
+    font-size: 48px;
+  }
 }

@@ -1,9 +1,15 @@
+"use client";
+
 import { Input } from "@src/components/Input/Input";
 import Image from "next/image";
 import Link from "next/link";
 import "./style.css";
 
 export default function Login() {
+  const handleInDevelopmentLinks = () => {
+    alert("Ação em desenvolvimento indisponível no momento!");
+  };
+
   return (
     <>
       <div className="login-text">
@@ -13,7 +19,9 @@ export default function Login() {
           <p>
             Caso você ainda não seja um cliente PAI,
             <br />
-            <Link href="/cadastro">faça seu cadastro aqui.</Link>
+            <button onClick={handleInDevelopmentLinks}>
+              faça seu cadastro aqui.
+            </button>
           </p>
         </div>
       </div>
@@ -21,7 +29,9 @@ export default function Login() {
         <form>
           <Input name="email" placeholder="Digite seu e-mail" />
           <Input type="password" name="password" placeholder="••••••••" />
-          <Link href="/esqueci-minha-senha">Esqueceu sua senha?</Link>
+          <button onClick={handleInDevelopmentLinks}>
+            Esqueceu sua senha?
+          </button>
           <Link className="link-button" href="/area-do-cliente">
             Fazer login
           </Link>
@@ -35,20 +45,22 @@ export default function Login() {
             alt="Logar com Google."
             width={116}
             height={60}
+            onClick={handleInDevelopmentLinks}
           />
-          <div className="apple-card">
+          <button onClick={handleInDevelopmentLinks} className="apple-card">
             <Image
               src="/apple.svg"
               alt="Logar com Apple"
               width={23}
               height={28}
             />
-          </div>
+          </button>
           <Image
             src="/facebook-card.svg"
             alt="Logar com Facebook."
             width={116}
             height={60}
+            onClick={handleInDevelopmentLinks}
           />
         </div>
       </div>

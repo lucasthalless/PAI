@@ -5,6 +5,7 @@ footer {
   display: flex;
   justify-content: space-between;
   line-height: 22.5px;
+  gap: 36px;
 }
 
 footer div:nth-child(1) {
@@ -23,7 +24,9 @@ footer div nav {
 
 footer div:nth-last-child(1) {
   display: flex;
-  gap: 100px;
+  row-gap: 20px;
+  column-gap: 100px;
+  flex-wrap: wrap;
 }
 
 footer h5 {
@@ -35,4 +38,14 @@ footer h5 {
 
 footer a:hover {
   color: #7c7c7c;
+}
+
+@media (max-width: 997px) {
+  footer {
+    padding: 160px 30px 220px;
+    flex-direction: column;
+  }
+  footer div:nth-last-child(1) {
+    margin-top: 48px;
+  }
 }

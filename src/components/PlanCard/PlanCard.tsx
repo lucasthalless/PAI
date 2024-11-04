@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "../svgs/ArrowRight";
 import { Check } from "../svgs/Check";
-import './style.css';
+import "./style.css";
 
 interface PlanCardProps {
   name: string;
@@ -25,7 +25,7 @@ export function PlanCard({
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/checkout");
+    router.push("/login");
   };
 
   return (

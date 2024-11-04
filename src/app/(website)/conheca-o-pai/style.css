@@ -52,6 +52,7 @@
   display: flex;
   gap: 65px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .talk-to-us-section {
@@ -89,4 +90,31 @@
 
 .talk-to-us-section form button:hover {
   background-color: #ffffffcf;
+}
+
+@media (max-width: 997px) {
+  .get-to-know {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .get-to-know .get-to-know-text h2 {
+    font-size: 36px;
+  }
+
+  .get-to-know .get-to-know-img {
+    display: none;
+  }
+
+  .founders-section {
+    padding-inline: 30px;
+  }
+
+  .founders-section h2 {
+    font-size: 48px;
+  }
+
+  .talk-to-us-section {
+    padding: 180px 30px;
+  }
 }

@@ -33,3 +33,13 @@
   position: absolute;
   bottom: 140px;
 }
+
+@media (max-width: 997px) {
+  .banner-section {
+    padding: 30px 20px 80px;
+  }
+
+  .banner-section .arrow-down-banner {
+    bottom: 24px;
+  }
+}
