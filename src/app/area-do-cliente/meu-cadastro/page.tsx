@@ -20,7 +20,7 @@ export default function Page() {
             <Input
               id="name"
               type="text"
-              defaultValue="Carolina Estevam Rodgerio"
+              value="Carolina Estevam Rodgerio"
               placeholder="Seu nome completo"
             />
           </div>
@@ -31,7 +31,7 @@ export default function Page() {
             <Input
               id="email"
               type="email"
-              defaultValue="carolina.rodgerio@fiap.com.br"
+              value="carolina.rodgerio@fiap.com.br"
               placeholder="exemplo@email.com"
             />
           </div>
@@ -42,7 +42,7 @@ export default function Page() {
             <Input
               id="tel"
               type="tel"
-              defaultValue="(11) 99999-4321"
+              value="(11) 99999-4321"
               placeholder="(00) 9 0000-0000"
             />
           </div>
@@ -51,24 +51,16 @@ export default function Page() {
               Endereço
             </label>
             <div className="address-inputs">
-              <Input type="text" defaultValue="03330-000" placeholder="CEP" />
+              <Input type="text" value="03330-000" placeholder="CEP" />
+              <Input type="text" value="Rua dos Pais" placeholder="Rua" />
+              <Input type="text" value="1" placeholder="Número" />
               <Input
                 type="text"
-                defaultValue="Rua dos Pais"
-                placeholder="Rua"
-              />
-              <Input type="text" defaultValue="1" placeholder="Número" />
-              <Input
-                type="text"
-                defaultValue="Apartamento 10"
+                value="Apartamento 10"
                 placeholder="Complemento"
               />
-              <Input
-                type="text"
-                defaultValue="São Paulo"
-                placeholder="Cidade"
-              />
-              <Input type="text" defaultValue="SP" placeholder="Estado" />
+              <Input type="text" value="São Paulo" placeholder="Cidade" />
+              <Input type="text" value="SP" placeholder="Estado" />
             </div>
           </div>
           <div className="form-row form-row-vehicle">
@@ -78,7 +70,7 @@ export default function Page() {
             <Input
               id="license-plate"
               type="text"
-              defaultValue="PAI-0000"
+              value="PAI-0000"
               placeholder="Placa"
             />
             <label htmlFor="renavam" className="form-label">
@@ -87,7 +79,7 @@ export default function Page() {
             <Input
               id="renavam"
               type="text"
-              defaultValue="00000000000"
+              value="00000000000"
               placeholder="Renavam"
             />
           </div>

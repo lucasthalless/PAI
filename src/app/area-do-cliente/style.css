@@ -15,6 +15,8 @@
   padding-top: 100px;
   width: 100%;
   overflow: scroll;
+  background-color: var(--black);
+  transition: 0.3s;
 }
 
 .customer-dashboard-aside span {
@@ -40,7 +42,7 @@
   gap: 4px;
   border-bottom: 1px solid var(--dark-gray-2);
   padding: 0 28px 20px;
-  width: 100%;
+  width: 300px;
 }
 
 .customer-dashboard nav a {
@@ -89,4 +91,56 @@
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
+}
+
+.close-mobile-sidebar-button,
+.open-mobile-sidebar-button {
+  display: none;
+  position: absolute;
+  background: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.close-mobile-sidebar-button {
+  top: 10px;
+  right: 10px;
+}
+
+.open-mobile-sidebar-button {
+  top: 28px;
+  left: 20px;
+}
+
+.customer-dashboard-aside .close-mobile-sidebar-button:hover,
+.open-mobile-sidebar-button:hover {
+  background-color: unset;
+  background: none;
+  box-shadow: inset 0px 0px 18px 18px var(--dark-gray-2);
+}
+
+@media (max-width: 997px) {
+  .customer-dashboard-aside {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    max-width: 0;
+    overflow: hidden;
+  }
+
+  .customer-dashboard-aside.open {
+    max-width: 300px;
+  }
+
+  .close-mobile-sidebar-button,
+  .open-mobile-sidebar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashboard-content-section h1 {
+    font-size: 28px;
+  }
 }

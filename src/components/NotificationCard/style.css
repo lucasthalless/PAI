@@ -69,8 +69,25 @@
   margin-left: 10px;
   cursor: pointer;
   align-self: start;
+  background: unset;
+  padding: 0;
+}
+
+.action-container:hover {
+  background: unset;
 }
 
 .action-container:hover {
   color: #f87171;
+}
+
+@media (max-width: 997px) {
+  .icon-container {
+    display: none;
+  }
+
+  .message {
+    padding: 0;
+    max-width: 100%;
+  }
 }

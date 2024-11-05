@@ -112,3 +112,46 @@
 .plan-form-container .button-solicitar-cancelamento:hover {
   background-color: #2e7ce1;
 }
+
+@media (max-width: 997px) {
+  .plan-form-container {
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .plan-form-container form {
+    width: 100%;
+  }
+
+  .plan-form-container .button-group {
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .plan-form-container .form-row {
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .plan-form-container .form-row .input {
+    width: 100%;
+  }
+
+  .plan-form-container .form-row-vehicle {
+    flex-direction: column;
+  }
+
+  .plan-form-container .form-row label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .plan-form-container .form-row-address .address-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}

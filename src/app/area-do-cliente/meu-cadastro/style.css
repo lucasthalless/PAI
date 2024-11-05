@@ -95,3 +95,44 @@
 .button-solicitar-exclusao:hover {
   background-color: #2e7ce1;
 }
+
+@media (max-width: 997px) {
+  .user-data-form-container {
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .user-data-form-container form {
+    width: 100%;
+  }
+
+  .user-data-form-container .button-group {
+    align-items: center;
+  }
+
+  .user-data-form-container .form-row {
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .user-data-form-container .form-row .input {
+    width: 100%;
+  }
+
+  .user-data-form-container .form-row-vehicle {
+    flex-direction: column;
+  }
+
+  .user-data-form-container .form-row label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .user-data-form-container .form-row-address .address-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -9,15 +9,28 @@ import { UserCircle } from "@src/components/svgs/UserCircle";
 import Image from "next/image";
 import Link from "next/link";
 import "./style.css";
+import ArrowLeft from "@src/components/svgs/ArrowLeft";
+import { useState } from "react";
+import { ArrowRight } from "@src/components/svgs/ArrowRight";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <main className="customer-dashboard">
-      <aside className="customer-dashboard-aside">
+      <aside
+        className={`customer-dashboard-aside ${isSidebarOpen ? "open" : null}`}
+      >
+        <button
+          className="close-mobile-sidebar-button"
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        >
+          <ArrowLeft width={20} height={20} />
+        </button>
         <nav>
           <Link href="/area-do-cliente/meu-cadastro">
             <UserCircle />
@@ -53,7 +66,15 @@ export default function RootLayout({
           />
         </Link>
       </aside>
-      <section className="dashboard-content-section">{children}</section>
+      <section className="dashboard-content-section">
+        <button
+          className="open-mobile-sidebar-button"
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        >
+          <ArrowRight width={20} height={20} color="#fff" />
+        </button>
+        {children}
+      </section>
     </main>
   );
 }

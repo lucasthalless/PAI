@@ -1,8 +1,12 @@
+"use client";
+
 import NotificationCard from "@src/components/NotificationCard/NotificationCard";
-import Image from "next/image";
+import { useState } from "react";
 
 export default function Page() {
-  const notifications = [
+  const [notifications, setNotifications] = useState<
+    { title: string; message: JSX.Element; time: string }[]
+  >([
     {
       title: "AGENDAMENTO",
       message: (
@@ -15,12 +19,15 @@ export default function Page() {
       ),
       time: "30 minutos atrás",
     },
-  ];
+  ]);
+
+  const removeNotification = (index: number) => {
+    setNotifications(notifications.splice(index + 1, 1));
+  };
 
   if (notifications.length == 0)
     return (
       <>
-        <Image alt="Notification" src="" width={284} height={284} />
         <h1>Sem notificações por enquanto!</h1>
       </>
     );
@@ -31,10 +38,12 @@ export default function Page() {
       <div className="separator"></div>
       {notifications.map((notification, index) => (
         <NotificationCard
+          index={index}
           key={index}
           title={notification.title}
           message={notification.message}
           time={notification.time}
+          handleRemove={removeNotification}
         />
       ))}
     </>
