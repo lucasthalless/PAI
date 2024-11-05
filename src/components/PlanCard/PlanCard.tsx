@@ -49,7 +49,7 @@ export function PlanCard({
         </p>
       </div>
       <button onClick={() => handleClick()}>
-        Quero esse plano <ArrowRight />
+        Quero esse plano <ArrowRight width={18} height={18} />
       </button>
     </div>
   );
