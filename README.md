@@ -2,7 +2,7 @@
 
 ## Ambiente de produção
 
-O projeto possui um deploy bem sucedido na Vercel, disponível [aqui.](https://pai-60wl1nttz-lucasthalless-projects.vercel.app/)
+O projeto possui um deploy bem sucedido na Vercel, disponível [aqui.](https://porto-artificial-intelligence.vercel.app/)
 
 ## Ambiente de desenvolvimento
 
