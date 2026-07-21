@@ -19,9 +19,10 @@ export default function Chat() {
   const sendMessage = async () => {
     if (!input) return;
 
-    setMessages([...messages, { sender: "user", content: input }]);
+    const currentInput = input;
+    setMessages((prev) => [...prev, { sender: "user", content: currentInput }]);
     setInput("");
-    const botResponse = await getBotResponse(input);
+    const botResponse = await getBotResponse(currentInput);
     setMessages((prev) => [
       ...prev,
       {
@@ -35,7 +36,7 @@ export default function Chat() {
   const sendOption = async (option: string) => {
     if (!option) return;
 
-    setMessages([...messages, { sender: "user", content: option }]);
+    setMessages((prev) => [...prev, { sender: "user", content: option }]);
     const botResponse = await getBotResponse(option);
     setMessages((prev) => [
       ...prev,
