@@ -23,7 +23,7 @@ export default function Page() {
   ]);
 
   const removeNotification = (index: number) => {
-    setNotifications(notifications.splice(index + 1, 1));
+    setNotifications((prev) => prev.filter((_, i) => i !== index));
   };
 
   if (notifications.length == 0)
