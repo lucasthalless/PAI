@@ -3,6 +3,13 @@ import { TalkToUsForm } from "@src/components/TalkToUsForm/TalkToUsForm";
 import Image from "next/image";
 import FounderCard from '../../../components/FounderCard/FounderCard';
 import './style.css';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PAI ⎯ Conheça o PAI",
+  description:
+    "Saiba mais sobre o PAI, a solução de diagnóstico automotivo com IA, e conheça os fundadores do projeto.",
+};
 
 export default function ConhecaOPAI() {
   return (

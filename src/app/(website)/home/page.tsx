@@ -2,6 +2,13 @@ import { ChevronRight } from "@src/components/Chevron/ChevronRight";
 import Image from "next/image";
 import Link from "next/link";
 import "./home.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PAI ⎯ Início",
+  description:
+    "PAI (Porto Artificial Intelligence) é uma solução de diagnóstico automotivo inteligente desenvolvida para a Porto Seguro®.",
+};
 
 export default function Home() {
   return (

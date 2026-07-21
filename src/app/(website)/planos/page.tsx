@@ -2,6 +2,13 @@ import Banner from "@src/components/Banner/Banner";
 import { PlanCard } from "@src/components/PlanCard/PlanCard";
 import FaqList from '../../../components/FaqList/FaqList';
 import './style.css';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PAI ⎯ Planos",
+  description:
+    "Conheça os planos de assinatura do PAI e escolha o melhor para você. A partir de R$ 4,99/mês.",
+};
 
 export default function Planos() {
   return (

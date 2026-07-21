@@ -3,6 +3,13 @@ import { ChevronRight } from "@src/components/Chevron/ChevronRight";
 import Image from "next/image";
 import Link from "next/link";
 import './style.css';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PAI ⎯ Funcionalidades",
+  description:
+    "Descubra todas as funcionalidades do PAI: chatbot com IA, diagnóstico via imagem e som, lembretes, agendamento e mais.",
+};
 
 export default function Page()  {
   return (
