@@ -1,12 +1,8 @@
-"use client";
-
 import { Input } from "@src/components/Input/Input";
+import { InDevelopmentButton } from "@src/components/InDevelopmentButton/InDevelopmentButton";
 import "./style.css";
 
 export default function Page() {
-  const handleInDevelopmentActions = () => {
-    alert("Ação em desenvolvimento indisponível no momento!");
-  };
   return (
     <>
       {/* MOCK */}
@@ -58,7 +54,6 @@ export default function Page() {
               FORMA DE PAGAMENTO
             </label>
             <div className="payment-method">
-              {/* <Image src="" alt="Ícone Mastercard" width={24} height={24} /> */}
               <Input
                 id="payment-method"
                 className="payment-text"
@@ -69,24 +64,15 @@ export default function Page() {
         </form>
 
         <div className="button-group">
-          <button
-            onClick={handleInDevelopmentActions}
-            className="button-alterar-plano"
-          >
+          <InDevelopmentButton className="button-alterar-plano">
             Alterar plano
-          </button>
-          <button
-            onClick={handleInDevelopmentActions}
-            className="button-alterar-pagamento"
-          >
+          </InDevelopmentButton>
+          <InDevelopmentButton className="button-alterar-pagamento">
             Alterar forma de pagamento
-          </button>
-          <button
-            onClick={handleInDevelopmentActions}
-            className="button-solicitar-cancelamento"
-          >
+          </InDevelopmentButton>
+          <InDevelopmentButton className="button-solicitar-cancelamento">
             Solicitar cancelamento
-          </button>
+          </InDevelopmentButton>
         </div>
       </div>
     </>

@@ -1,12 +1,8 @@
-"use client";
-
 import { Input } from "@src/components/Input/Input";
+import { InDevelopmentButton } from "@src/components/InDevelopmentButton/InDevelopmentButton";
 import "./style.css";
 
 export default function Page() {
-  const handleInDevelopmentActions = () => {
-    alert("Ação em desenvolvimento indisponível no momento!");
-  };
   return (
     <>
       {/* MOCK */}
@@ -87,18 +83,12 @@ export default function Page() {
         </form>
 
         <div className="button-group">
-          <button
-            onClick={handleInDevelopmentActions}
-            className="button-alterar-dados"
-          >
+          <InDevelopmentButton className="button-alterar-dados">
             Alterar dados
-          </button>
-          <button
-            onClick={handleInDevelopmentActions}
-            className="button-solicitar-exclusao"
-          >
+          </InDevelopmentButton>
+          <InDevelopmentButton className="button-solicitar-exclusao">
             Solicitar exclusão
-          </button>
+          </InDevelopmentButton>
         </div>
       </div>
     </>
