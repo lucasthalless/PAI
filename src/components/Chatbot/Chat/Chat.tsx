@@ -58,10 +58,10 @@ export default function Chat() {
     <div>
       <div className="chat">
         {messages.map((message, index) => (
-          <>
-            <div key={index} className={`message ${message.sender}`}>
-              {message.content.split("\n").map((text, index) => (
-                <Fragment key={index}>
+          <Fragment key={index}>
+            <div className={`message ${message.sender}`}>
+              {message.content.split("\n").map((text, textIndex) => (
+                <Fragment key={textIndex}>
                   {text}
                   <br />
                 </Fragment>
@@ -69,12 +69,12 @@ export default function Chat() {
             </div>
             {message.options ? (
               <div className="options-wrapper">
-                {message.options.map((option, index) => (
+                {message.options.map((option, optionIndex) => (
                   <button
                     onClick={() => {
                       sendOption(option);
                     }}
-                    key={index}
+                    key={optionIndex}
                     className="chat-option-button"
                   >
                     {option}
@@ -82,7 +82,7 @@ export default function Chat() {
                 ))}
               </div>
             ) : null}
-          </>
+          </Fragment>
         ))}
         <div ref={endOfMessagesRef}></div>
       </div>
