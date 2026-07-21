@@ -9,6 +9,7 @@ export default function Page() {
   };
   return (
     <>
+      {/* MOCK */}
       <h1>Meu cadastro</h1>
       <div className="separator"></div>
       <div className="user-data-form-container">

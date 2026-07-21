@@ -4,6 +4,7 @@ import NotificationCard from "@src/components/NotificationCard/NotificationCard"
 import { useState } from "react";
 
 export default function Page() {
+  // MOCK
   const [notifications, setNotifications] = useState<
     { title: string; message: JSX.Element; time: string }[]
   >([

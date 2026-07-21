@@ -3,6 +3,8 @@ import Calendar from "@src/components/Calendar/Calendar";
 import "./style.css";
 
 export default function Page() {
+
+  // MOCK
   const appointments = [
     {
       appointmentDate: new Date(2024, 11, 2),

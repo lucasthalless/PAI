@@ -9,6 +9,7 @@ export default function Page() {
   };
   return (
     <>
+      {/* MOCK */}
       <h1>Minha assinatura</h1>
       <div className="separator"></div>
       <div className="plan-form-container">
