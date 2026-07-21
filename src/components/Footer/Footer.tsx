@@ -23,12 +23,12 @@ export function Footer()  {
         </nav>
         <nav>
           <h5>ÁREA DO CLIENTE</h5>
-          <Link href="/cadastro">Cadastro</Link>
-          <Link href="/assinatura">Assinatura</Link>
-          <Link href="/agendamentos">Agendamentos</Link>
-          <Link href="/chatbot">Chatbot PAI</Link>
-          <Link href="/centro-de-parceiros">Centro de Parceiros</Link>
-          <Link href="/notificações">Notificações</Link>
+          <Link href="/area-do-cliente/meu-cadastro">Cadastro</Link>
+          <Link href="/area-do-cliente/minha-assinatura">Assinatura</Link>
+          <Link href="/area-do-cliente/meus-agendamentos">Agendamentos</Link>
+          <Link href="/area-do-cliente/chatbot">Chatbot PAI</Link>
+          <Link href="/area-do-cliente/parceiros">Centro de Parceiros</Link>
+          <Link href="/area-do-cliente/notificacoes">Notificações</Link>
         </nav>
         <nav>
           <h5>REDES SOCIAIS</h5>
