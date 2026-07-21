@@ -1,13 +1,30 @@
 "use server";
 
+interface BotResponse {
+  responseWA: string;
+  options?: string[];
+}
+
 export const getBotResponse = async (
   userInput: string
-): Promise<{ responseWA: string; options?: string[] }> => {
-  const response = await fetch(process.env.CHATBOT_API_URL as string, {
+): Promise<BotResponse> => {
+  const apiUrl = process.env.CHATBOT_API_URL;
+
+  if (!apiUrl) {
+    throw new Error("CHATBOT_API_URL não está configurada.");
+  }
+
+  const response = await fetch(apiUrl, {
     method: "POST",
     body: userInput,
-  }).then((res) => res.json());
+  });
 
-  console.log(response);
-  return response;
+  if (!response.ok) {
+    throw new Error(
+      `Erro na API do chatbot: ${response.status} ${response.statusText}`
+    );
+  }
+
+  const data: BotResponse = await response.json();
+  return data;
 };
