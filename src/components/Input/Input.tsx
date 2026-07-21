@@ -1,10 +1,10 @@
 import { InputHTMLAttributes } from "react";
 
 
-export function Input(props: InputHTMLAttributes<null>)  {
+export function Input({ className, ...props }: InputHTMLAttributes<HTMLInputElement>) {
   return (
-    <div className="input">
-      <input type={props.type} placeholder={props.placeholder} disabled={props.disabled} />
+    <div className={`input ${className ?? ""}`}>
+      <input {...props} />
     </div>
   );
-};
+}
