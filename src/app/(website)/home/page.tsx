@@ -1,5 +1,6 @@
 import { ChevronRight } from "@src/components/Chevron/ChevronRight";
 import Image from "next/image";
+import Link from "next/link";
 import "./home.css";
 
 export default function Home() {
@@ -19,9 +20,9 @@ export default function Home() {
           objetivo de proporcionar uma nova, completa e automatizada experiência
           no campo do <strong>diagnóstico de veículos automotivos.</strong>
         </p>
-        <a className="gradient-button" href="/conheca-o-pai">
+        <Link className="gradient-button" href="/conheca-o-pai">
           Saiba mais <ChevronRight />
-        </a>
+        </Link>
       </div>
       <div className="banner-imgs">
         <Image src="/PAI.png" width={632} height={632} alt="Imagem PAI" />
