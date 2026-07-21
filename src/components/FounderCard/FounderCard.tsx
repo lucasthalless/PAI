@@ -36,7 +36,7 @@ export default function FounderCard({
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src="linkedin.svg" alt='Github.' width={44} height={44} />
+          <Image src="linkedin.svg" alt='LinkedIn.' width={44} height={44} />
         </a>
       </div>
     </div>
