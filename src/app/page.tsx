@@ -1,5 +1,5 @@
-import Redirect from "@src/utils/redirect";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <Redirect path="/home" />;
+  redirect("/home");
 }
